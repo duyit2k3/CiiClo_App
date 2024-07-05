@@ -1,0 +1,52 @@
+.footer-section {
+    font-family: Quicksand;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.frame88, .footer-bottom {
+    width: 1000px;
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.frame88 .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(4, 106, 56);
+    padding-bottom: 30px;
+}
+.frame79, .frame80, .frame81, .frame82 {
+    padding-right: 50px;
+}
+
+.frame88 .sub-title {
+    font-weight: 400;
+    font-size: 17px;
+    padding-bottom: 21px;
+    color: rgb(36, 39, 45);
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(37, 61, 78);
+}
+.frame90 {
+    width: 1000px;
+}
+
+.frame90 .line {
+    width: 92%;
+    border-top: 1px solid rgb(214, 218, 224);
+}

@@ -1,0 +1,163 @@
+.contact-section {
+    font-family: Quicksand;
+    display: flex;
+    justify-content: center;
+}
+
+.left-side-contact {
+    width: 500px;
+}
+
+.left-side-contact .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: rgb(4, 106, 56);
+    padding-bottom: 9px;
+}
+
+.left-side-contact .sub-title {
+    font-weight: 400;
+    font-size: 17px;
+    padding-bottom: 130px;
+}
+.icon-container-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}   
+.icon-container-contact .text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 24px;
+}
+
+.input-container-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right-side-contact {
+    margin-top: 10px;
+    width: 600px;
+}
+
+
+.right-side-contact .label{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(4, 106, 56);
+}
+
+.input-container {
+    margin-right: 40px;
+    margin-bottom: 35px;
+}
+
+ .input-type {
+    width: 280px;
+    padding: 20px 10px 10px 3px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 14px;
+}
+.input-container-top .input-type::placeholder {
+    color: rgb(141, 141, 141);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.check-containers {
+    display: flex;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    position: relative;
+}
+.check-container .check-box {
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.check-container .check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-container .check-box:checked ~ .check-mark {
+    background-color: black;
+}
+
+.check-container .check-mark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.check-container .check-box:checked ~ .check-mark::after {
+    display: block;
+    margin-bottom: 3px;
+    margin-left: 1px;
+}
+
+.topic {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.topic .label {
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+.input-container-bottom {
+    width: 100%;
+}
+
+.input-container-bottom .input-container {
+    margin-right: 0;
+}
+
+.input-container-bottom .input-type {
+    width: 100%;
+}
+
+.btnSend {
+    float: right;
+    padding: 15px 48px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(255, 256, 255);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 106, 56);
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.btnSend:hover {
+    opacity: 0.8;
+}

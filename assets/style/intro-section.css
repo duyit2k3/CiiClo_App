@@ -1,18 +1,14 @@
 .intro-section {
-    max-width: 100vw;
-    margin-top: 120px;
+    width: 1200px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    position: absolute;
-    left: 0;
-    right: 0;   
 }   
 
 .left-side-intro-section {
     width: 50%;
-    height: 100%;
 }
 .animation {
     max-width: 100%;
@@ -22,27 +18,27 @@
 }
 .overlay {
     position: absolute;
-    width: 563px;
-    height: 640px;
+    width: 88%;
+    height: 700px;
     /* border: 1px solid red; */
     top: -220px;
-    left: 1px;
+    left: -40px;
     pointer-events: all;
 }
 .animation:hover .visa{
-    transform: translate(54%, 8%) scale(0.8);
+    transform: translate(48%, 0%) scale(0.8);
 }
 .animation:hover .one-app {
-    transform: translate(-70%, 30%);
+    transform: translate(-105%, 42%);
 }
 .animation:hover .sercure {
-    transform: translate(-40%, 30%);
+    transform: translate(-55%, 25%);
 }
 .animation:hover > .portal-1 {
-    transform: translateX(30%) scale(1.2) rotate(0deg);
+    transform: translate(30%, 5%) scale(1.4) rotate(0deg);
 }   
 .animation:hover > .portal-2 {
-    transform: translate(30%, 20%) scale(1.2) rotate(-80deg);
+    transform: translate(30%, 20%) scale(1.4) rotate(-80deg);
 }
 
 .visa, .one-app, .sercure, .animation > .portal-1, .animation > .portal-2 {
@@ -50,12 +46,12 @@
 }
 
 .ip14 {
-    max-width: 200%;
-    height: 808px;
+    max-width: 100%;
+    height: 720px;
     display: block;
     position: absolute;
-    top: -320px;
-    left: -264px;
+    top: -230px;
+    left: -263px;
     z-index: 100;
     pointer-events: none;
 }
@@ -66,24 +62,27 @@
 }
 
 .visa {
-    max-width: 36%;
+    max-width: 45%;
+    height: 470px;
     display: block;
-    top: -124px;
-    left: 290px;
+    top: -122px;
+    left: 213px;
 }
 
 .one-app {
-    max-width: 26%;
-    left: 94px;
-    top: -75px;
+    max-width: 25%;
+    height: auto;
+    left: 40px;
+    top: -60px;
 }
 
 .sercure {
     position: absolute;
-    max-width: 23%;
+    max-width: 33%;
+    height: 280px;
     z-index: 50;
-    top: 107px;
-    left: 34px;
+    top: 97px;
+    left: -38px;
 }
 
 .animation .portal-1 {
@@ -92,7 +91,7 @@
     position: absolute;
     z-index: 200;
     top: -180px;
-    left: 430px;
+    left: 350px;
     transform: rotate(-30deg);
 }
 
@@ -101,8 +100,8 @@
     height: auto;
     position: absolute;
     z-index: 200;
-    top: 252px;
-    left: 410px;
+    top: 330px;
+    left: 360px;
     transform: rotate(-45deg);
 }
 
@@ -164,6 +163,6 @@
     border-radius: 50%;
     background-color: rgba(1, 70, 177, 0.9);
     opacity: 0.15;
-    box-shadow: 0 0 200px 200px rgba(1, 70, 177, 0.9);
+    box-shadow: 0 0 300px 300px rgba(1, 70, 177, 0.9);
     z-index: 200;
 }

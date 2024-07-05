@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -67,14 +67,14 @@
 }
 
 .header .ellipse {
-    position: relative;
+    position: absolute;
     z-index: 100;
     top: -100px;
-    left: -150px;
-    width: 70px;
-    height: 70px;
+    left: -171px;
+    width: 215px;
+    height: 215px;
     border-radius: 50%;
-    background-color: rgba(1, 70, 177);
+    background-color: rgba(1, 70, 177, 0.9);
     opacity: 0.15;
-    box-shadow: 0 0 300px 300px rgba(1, 70, 177);
+    box-shadow: 0 0 200px 200px rgba(1, 70, 177, 0.9);
 }

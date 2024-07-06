@@ -77,26 +77,30 @@
 }
 
 .check-containers {
-    display: flex;
+    display: flex; 
+    justify-content: flex-start;
 }
 
 .check-container {
     display: flex;
     align-items: center;
-    padding-right: 60px;
-    padding-left: 30px;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 60px;
+}
+
+
+.check-container .text {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    position: relative;
 }
 .check-container .check-box {
     position: absolute;
-    height: 0;
-    width: 0;
+    opacity: 0;
 }
 .check-container .check-mark {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 20px;
@@ -104,9 +108,7 @@
     border-radius: 50%;
     background-color: rgb(224, 224, 224);
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-right: 10px;
 }
 .check-container .check-box:checked ~ .check-mark {
     background-color: black;
@@ -120,12 +122,13 @@
     height: 8px;
     border: solid white;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -66%) rotate(45deg);
 }
+
 .check-container .check-box:checked ~ .check-mark::after {
-    display: block;
-    margin-bottom: 3px;
-    margin-left: 1px;
+    display: inline;
 }
 
 .topic {

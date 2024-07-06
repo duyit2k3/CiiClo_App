@@ -1,16 +1,7 @@
 .project-milestones-section {
     margin-top: 100px;  
-    height: 800px;
-}
-.project-milestones-section .content-section {
-    position: relative;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 600px;
-    left: -60px;
+    width: 1400px;
+    /* height: 800px; */
 }
 
 .project-milestones-section .section-heading {
@@ -18,138 +9,116 @@
     padding-right: 48px;
 }
 
-.line-ellipse-time-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.timeline {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 0.9fr 8px 1fr;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
-.rectangle {
-    width: 200%;
+
+.timeline__bottom, .timeline__top {
+    display: flex;
+    margin-left: 100px;
+}
+.timeline__top {
+    margin-left: 250px;
+}
+
+.timeline__component {
     position: relative;
+    left: 7px;
+}
+
+.timeline__component--bg {
+    font-family: Quicksand;
+    padding: 50px 0px 0px 20px;
+    border-left: 2px solid rgb(255, 69, 129);
+}
+
+.timeline__top .timeline__component--bg {
+    padding-top: 0;
+    padding-right: 20px;
+}
+
+
+.timeline__date {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.timeline__date--top {
+    position: absolute;
+    top: -2.5em;
+    left: -2em;
+}
+
+.timeline__date--bottom {
+    position: absolute;
+    top: 108%;
+    left: -2em;
+
+}
+.timeline__middle {
     height: 8px;
-    background: linear-gradient(to left, rgb(255, 69, 129), rgb(67, 136, 221));
-    opacity: 0.1;
-}
-.bar-milestone .dashed-line {
     position: relative;
-    top: 5px;
-    width: 70px;
+    background: linear-gradient(to left, rgb(255, 69, 129, 0.1), rgb(67, 136, 221, 0.1));
+}
+.timeline__middle .dashed__line {
+    position: absolute;
+    top: 4px;
+    width: 100px;
     border-top: 2px dashed rgb(255, 69, 129);
-    z-index: 200;
+    z-index: 100;
 }
 
-.milestones {
-    width: 1200px;
-    position: relative;
-    top: -12px;
-    left: 30px;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-}
 
-.milestone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: -40px;
-}
-.milestone:nth-child(2) {
-    left: -30px;
-}
-
-.milestone .ellipse-in {
+.timeline__point {
+    position: absolute;
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: rgb(255, 69, 129);
-    margin-top: 20px;
-    position: relative;
+    left: -7px;
+    top: -12px;
 }
 
-.milestone:first-child .ellipse-in .ellipse-out {
-    box-shadow: 0 0 8px 0.5px rgb(255, 69, 129);
+.timeline__top .timeline__point {
+    top: 99%;
 }
 
-.ellipse-out {
+.timeline__point::before {
+    content: "";
+    position: absolute;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: rgba(255, 69, 129, 0.1);
-    position: relative;
-    top: -8px;
     left: -8px;
-}
-.milestone .line {
-    position: relative;
-    top: -5px;
-    height: 300px;
-    border-left: 2px solid rgb(255, 69, 129);
-    transform-origin: top center;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.milestone:nth-child(even) .line{
-    transform: rotate(180deg);
-
-}
-
-.milestone .text {
-    font-family: Assistant;
-    font-weight: 600;
-    font-size: 16px;
-    height: 21px;
-}
-
-.milestone:nth-child(even) .text {
-    transform: translateY(80px);
-}
-
-.section-top, .section-down {
-    height: 260px;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    font-family: Quicksand;
-    left: 260px;
-}
-.section-top .content {
-    width: 430px;
-}
-.section-top .content:nth-child(2) {
-    width: 410px;
-}
-
-.section-top .content .text, .section-down .content .text{
+.timeline__title{
     font-weight: 600;
     font-size: 20px;
     background: linear-gradient(to left, rgb(255, 69, 129), rgb(67, 136, 221));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 25px;
+    padding-bottom: 0.5em;
+    padding-right: 40px;
 }
-.section-top .content:nth-child(3) .text {
-    background-size: 50% 100%;
+
+.special .timeline__title {
+    padding-right: 150px;
 }
-.section-top .sub-text, .section-down .sub-text{
-    width: 250px;
+
+.timeline__paragraph {
+    width: 80%;
     font-weight: 400;
     font-size: 17px;
-    padding-bottom: 40px;
+    line-height: 30px;
+    padding-bottom: 1.3em;
+    text-wrap: wrap;
 }
-
-.section-down {
-    top: -270px;
-    left: 80px;
-}
-.section-down .content {
-    padding-right: 90px;
-}
-
-.section-down .sub-text {
-    width: 280px;
-}
-
-
-
-

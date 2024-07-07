@@ -122,9 +122,9 @@
     height: 8px;
     border: solid white;
     border-width: 0 2px 2px 0;
-    top: 50%;
+    top: 46%;
     left: 50%;
-    transform: translate(-35%, -66%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .check-container .check-box:checked ~ .check-mark::after {

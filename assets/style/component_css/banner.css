@@ -1,0 +1,88 @@
+.banner {
+  margin-top: 200px;
+  font-family: Quicksand;
+  color: rgb(255, 255, 255);
+  width: 1200px;
+  border-radius: 20px;
+  background-color: green;
+  background: linear-gradient(10deg, rgb(22, 152, 88), rgb(4, 106, 56));
+  display: flex;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.banner__infor {
+  padding-top: 80px;
+}
+
+.banner__title {
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+  line-height: 70px;
+  padding-right: 34%;
+}
+
+
+
+.banner__sub-title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  padding-bottom: 35px;
+  padding-right: 12%;
+}
+
+.banner__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+}
+
+.banner__grid-item {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 27px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-bottom: 16px;
+}
+
+.banner__check-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.banner__check-mark::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  left: 11px;
+  top: 6px;
+}
+
+.banner__download-link + .banner__download-link {
+  margin-left: 12px;
+}
+
+.banner__img {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.banner__img img {
+  border-radius: 51px 51px 0 0;
+}

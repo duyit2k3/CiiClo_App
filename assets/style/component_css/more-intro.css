@@ -1,0 +1,89 @@
+.more-intro {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Quicksand;
+}
+
+.more-intro__heading {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+  color: rgb(4, 106, 56);
+}
+
+.more-intro__content {
+  display: flex;
+  margin-top: 40px;
+}
+
+.more-intro__content .content-col {
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-intro__content .content-col .content-col__item {
+  position: relative;
+  margin: 0px 67px;
+  width: 129px;
+  height: 129px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 12px 32px 0 rgba(169, 169, 173, 0.16);
+  margin-bottom: 40px;
+}
+
+.more-intro__content .content-col + .content-col .content-col__item::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 40px);
+  border-top: 2px dashed rgb(112, 112, 112);
+  top: 50%;
+  left: -180%;
+  transform: translateY(-50%);
+}
+
+.more-intro__content .content-col .content-col__item.special {
+  background-color: rgb(4, 106, 56);
+  box-shadow: 0 16px 32px 0 rgba(32, 191, 182, 0.3);
+}
+
+.more-intro__content .content-col .content-col__item .ellipse {
+  position: absolute;
+  left: 50px;
+  top: 80px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: rgba(4, 106, 56, 0.15);
+  box-shadow: 0 0 40px 20px rgba(4, 106, 56, 0.2);
+}
+
+.more-intro__content .content-col .content-col__item.special .ellipse {
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.3);
+}
+
+.more-intro__content .content-col .content-col__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(4, 106, 56);
+  margin-bottom: 15px;
+}
+
+.more-intro__content .content-col .content-col__para {
+  max-width: 70%;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}

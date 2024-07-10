@@ -1,0 +1,119 @@
+.why-choice {
+  max-width: 1100px;
+  margin-top: 200px;
+  font-family: Quicksand;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choice__content,
+.why-choice__img {
+  width: 50%;
+}
+
+.why-choice__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: rgb(4, 106, 56);
+  padding-bottom: 20px;
+}
+
+.why-choice__para {
+  width: 97%;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.why-choice__social-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+}
+
+.social-proof-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 0.8px solid rgb(214, 218, 224);
+  border-radius: 8px;
+  padding: 15px 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.social-proof-item:first-child {
+  border: none;
+  box-shadow: 6px 6px 14px 3px rgba(19, 21, 23, 0.06);
+}
+
+.social-proof-item__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(228, 238, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-proof-item__text {
+  width: 61%;
+  font-weight: 600;
+  font-size: 17;
+  line-height: 24px;
+  margin-left: 7%;
+}
+
+.why-choice__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 16px;
+  background-color: rgb(243, 247, 250);
+  height: 546px;
+  margin-left: 30px;
+}
+
+.why-choice__box {
+  width: 40%;
+  position: absolute;
+  top: 12%;
+  left: -8%;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 9px 20px 3px rgba(19, 21, 23, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.box__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 3px;
+}
+
+.why-choice__portal {
+  position: absolute;
+}
+
+.why-choice__portal-1st {
+  top: 18%;
+  left: 78%;
+}
+
+.why-choice__portal-2nd {
+  bottom: 10%;
+  left: 6%;
+}
+
+.why-choice__portal-3rd {
+  bottom: 35%;
+  right: 7%;
+  transform: scale(1.3);
+}

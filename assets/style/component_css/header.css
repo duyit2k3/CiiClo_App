@@ -1,0 +1,69 @@
+/* Header CSS */
+.header {
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-xl {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-wrapper {
+  max-width: 1100px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.header-ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  background-color: rgba(1, 70, 177, 0.9);
+  opacity: 0.15;
+  box-shadow: 0 0 200px 200px rgba(1, 70, 177, 0.9);
+}
+
+.header-logo {
+  font-family: Merriweather;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #046A38;
+}
+
+.header-nav {
+  display: flex;
+  width: 670px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav__item {
+  font-family: Quicksand;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(19, 21, 23);
+}
+
+.btnSignUp {
+  text-decoration: none;
+  width: 147px;
+  color: #FFFFFF;
+  padding: 12px 40px;
+  border-radius: 8px;
+  background-color: #046A38;
+  border: none;
+  transition: all 0.2s;
+}
+.btnSignUp:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,123 @@
+/* Intro CSS */
+.intro {
+  margin-top: 28px;
+  height: 750px;
+  min-width: 1320px;
+}
+
+.intro-animation__item {
+  max-width: 100%;
+  position: relative;
+}
+
+.ip14, .visa, .one_app, .sercure, .portal-1, .portal-2 {
+  position: absolute;    
+}
+.visa, .one_app, .sercure, .portal-1, .portal-2 {
+  transition: all 1.5s;
+}
+.ip14 {
+  max-width: 100%;
+  top: 0;
+  left: -30%;
+  pointer-events: none;
+  z-index: 100;
+}
+.visa {
+  max-width: 43%;
+  z-index: 200;
+  top: 116px;
+  left: 313px;
+}
+.intro-animation:hover .visa {
+  transform: translate(38%, 0%) scale(0.8);
+}
+.one_app {
+  max-width: 24%;
+  top: 177px;
+  left: 137px;
+  z-index: 200;
+}
+.intro-animation:hover .one_app {
+  transform: translate(-105%, 42%);
+}
+.sercure {
+  max-width: 32%;
+  z-index: 50;
+  top: 334px;
+  left: 32px;
+}
+.intro-animation:hover .sercure {
+  transform: translate(-45%, 25%);
+}
+.portal-1 {
+  max-width: 7%;
+  top: 65px;
+  left: 460px;
+  transform: rotate(-30deg);    
+}
+.intro-animation:hover .portal-1 {
+  transform: translate(30%, 5%) scale(1.4) rotate(0deg);
+}
+.portal-2 {
+  max-width: 10%;
+  top: 590px;
+  left: 469px;
+  transform: rotate(-45deg);
+}
+.intro-animation:hover .portal-2 {
+  transform: translate(30%, 20%) scale(1.4) rotate(-80deg);
+}
+.intro-info {
+  font-family: Quicksand;
+  color: rgb(19, 21, 23);
+  padding-left: 20px;
+  position: relative;
+}
+
+.intro-info__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+.intro-info__sub-title {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgb(36, 39, 45);
+}
+.intro-info__sub-title span {
+  font-weight: 700;
+  color: rgba(255, 0 , 0, 1);
+}
+
+.intro-info__sub-title .special {
+  color: rgb(4, 106, 56);
+}
+
+.intro-info__download {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(36, 39, 45);
+  margin-top: 118px;
+  margin-bottom: 20px;
+}
+.intro-info__download-link + .intro-info__download-link {
+  margin-left: 10px;
+}
+.intro-info__ellipse {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(1, 70, 177, 0.9);
+  opacity: 0.15;
+  box-shadow: 0 0 300px 300px rgba(1, 70, 177, 0.9);
+  z-index: 200;
+  top: 400px;
+  left: 600px;
+}

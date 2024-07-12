@@ -23,7 +23,7 @@
   margin-bottom: 80px;
 }
 
-.footer-grid__title {
+.footer-title {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
@@ -31,7 +31,7 @@
   padding-bottom: 30px;
 }
 
-.footer-grid__sub-title {
+.footer-text {
   font-weight: 400;
   font-size: 17px;
   padding-bottom: 21px;

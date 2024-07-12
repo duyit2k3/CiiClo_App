@@ -1,4 +1,9 @@
-.contact {
+.contact .container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-wrapper {
   width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -7,18 +12,13 @@
   padding: 40px 40px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   font-family: Quicksand;
-  margin-bottom: 20px;
 }
 
-/* .contact__wrapper {
-  
-} */
-
-.contact__input-form {
+.contact-form {
   width: 60%;
 }
 
-.contact__title {
+.contact-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -26,47 +26,49 @@
   padding-bottom: 9px;
 }
 
-.contact__sub-title {
+.contact-title {
   font-weight: 400;
   font-size: 17px;
   padding-bottom: 35%;
 }
 
-.contact__method {
+.contact-details {
   display: flex;
   align-items: center;
   padding: 15px 0px;
 }
 
-.contact__text {
+.contact-details__text {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   margin-left: 24px;
 }
 
-.input-form__infor {
+
+
+.contact-form__group1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.input-form__item {
+.contact-form__item {
   margin-bottom: 35px;
   padding-right: 40px;
 }
 
-.label {
+.contact-form__label {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: rgb(4, 106, 56);
 }
 
-.check-label {
+.contact-form__label.special {
   font-weight: 600;
 }
 
-.input {
+.contact-form__input {
   width: 100%;
   padding: 20px 0px 10px 3px;
   border: none;
@@ -76,24 +78,24 @@
   font-size: 14px;
 }
 
-.input-form__check {
+.contact-form__group2 {
   display: flex;
   margin-top: 35px;
 }
 
-.input-form__check-option {
+.contact-form__option {
   width: 30%;
   display: flex;
   align-items: center;
 }
 
-.check-box {
+.contact-form__checkbox {
   position: relative;
   opacity: 0;
   margin-left: 15px;
 }
 
-.check-mark {
+.contact-form__checkmark {
   position: absolute;
   height: 20px;
   width: 20px;
@@ -102,11 +104,11 @@
   cursor: pointer;
 }
 
-.check-box:checked ~ .check-mark {
+.contact-form__checkbox:checked ~ .contact-form__checkmark {
   background-color: black;
 }
 
-.check-mark::after {
+.contact-form__checkmark::after {
   content: "";
   position: absolute;
   display: none;
@@ -119,11 +121,11 @@
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.check-box:checked ~ .check-mark::after {
+.contact-form__checkbox:checked ~ .contact-form__checkmark::after {
   display: inline;
 }
 
-.input-form__mess {
+.contact-form__group3 {
   margin-top: 5%;
   padding-right: 40px;
 }

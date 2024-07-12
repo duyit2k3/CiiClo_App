@@ -1,4 +1,9 @@
-.why-choice {
+.benefits .container {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-wrapper {
   max-width: 1100px;
   margin-top: 200px;
   font-family: Quicksand;
@@ -7,12 +12,12 @@
   align-items: center;
 }
 
-.why-choice__content,
-.why-choice__img {
+.benefits-compenent,
+.benefits-img {
   width: 50%;
 }
 
-.why-choice__title {
+.benefits-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -20,20 +25,20 @@
   padding-bottom: 20px;
 }
 
-.why-choice__para {
+.benefits-para {
   width: 97%;
   font-size: 17px;
   line-height: 30px;
   margin-bottom: 60px;
 }
 
-.why-choice__social-proof-grid {
+.benefits-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 90%;
 }
 
-.social-proof-item {
+.benefits-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,12 +49,12 @@
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.social-proof-item:first-child {
+.benefits-item:first-child {
   border: none;
   box-shadow: 6px 6px 14px 3px rgba(19, 21, 23, 0.06);
 }
 
-.social-proof-item__icon {
+.benefits-item__icon {
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -59,7 +64,7 @@
   align-items: center;
 }
 
-.social-proof-item__text {
+.benefits-item__text {
   width: 61%;
   font-weight: 600;
   font-size: 17;
@@ -67,7 +72,7 @@
   margin-left: 7%;
 }
 
-.why-choice__img {
+.benefits-img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -78,7 +83,7 @@
   margin-left: 30px;
 }
 
-.why-choice__box {
+.benefits-box {
   width: 40%;
   position: absolute;
   top: 12%;
@@ -91,28 +96,28 @@
   padding: 15px;
 }
 
-.box__text {
+.benefits-box__text {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   padding-left: 3px;
 }
 
-.why-choice__portal {
+.benefits-portal {
   position: absolute;
 }
 
-.why-choice__portal-1st {
+.benefits-portal--1st {
   top: 18%;
   left: 78%;
 }
 
-.why-choice__portal-2nd {
+.benefits-portal--2nd {
   bottom: 10%;
   left: 6%;
 }
 
-.why-choice__portal-3rd {
+.benefits-portal--3rd {
   bottom: 35%;
   right: 7%;
   transform: scale(1.3);

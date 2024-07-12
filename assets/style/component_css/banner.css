@@ -1,4 +1,9 @@
-.banner {
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+
+.banner-wrapper {
   margin-top: 200px;
   font-family: Quicksand;
   color: rgb(255, 255, 255);
@@ -11,22 +16,20 @@
   padding: 0 80px;
 }
 
-.banner__infor {
+.banner-infor {
   padding-top: 80px;
 }
 
-.banner__title {
+.banner-heading {
   font-weight: 500;
   font-size: 64px;
-  letter-spacing: -1px;
   padding-bottom: 20px;
   line-height: 70px;
-  padding-right: 34%;
+  padding-right: 29%;
 }
 
 
-
-.banner__sub-title {
+.banner-title {
   font-weight: 500;
   font-size: 17px;
   line-height: 30px;
@@ -34,13 +37,13 @@
   padding-right: 12%;
 }
 
-.banner__grid {
+.banner-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 30px;
 }
 
-.banner__grid-item {
+.banner-grid__item {
   font-weight: 500;
   font-size: 17px;
   line-height: 27px;
@@ -51,7 +54,7 @@
   padding-bottom: 16px;
 }
 
-.banner__check-mark {
+.banner-grid__checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,7 +64,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.banner__check-mark::after {
+.banner-grid__checkmark::after {
   content: "";
   position: absolute;
   width: 5px;
@@ -73,16 +76,16 @@
   top: 6px;
 }
 
-.banner__download-link + .banner__download-link {
+.banner-link + .banner-link {
   margin-left: 12px;
 }
 
-.banner__img {
+.banner-img {
   display: flex;
   justify-content: center;
   padding-top: 100px;
 }
 
-.banner__img img {
+.banner-img img {
   border-radius: 51px 51px 0 0;
 }

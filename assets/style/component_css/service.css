@@ -1,10 +1,16 @@
-.service {
-  margin-top: 200px;
+.service .container {
   max-width: 1200px;
-  font-family: Quicksand;
 }
 
-.service__heading {
+.service-wrapper {
+  margin-top: 200px;
+  max-width: 1200px;
+  font-family: Quicksand;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-heading {
   font-weight: 700;
   font-size: 50px;
   line-height: 55px;
@@ -12,14 +18,14 @@
   color: rgb(4, 106, 56);
 }
 
-.service__wrapper {
+.service-list {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.service_img,
-.service__item--comming {
+.service-item__img,
+.service-item__comming {
   width: 214px;
   height: 214px;
   background-color: transparent;
@@ -41,18 +47,18 @@
 .service__img--4 {
   background-color: rgb(223, 235, 241);
 }
-.service__item--comming {
+.service-item__comming {
   background-color: rgb(248, 248, 248);
 }
 
-.service__title, .service__comming {
+.service-item__title, .service-comming {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   padding-top: 15px;
 }
 
-.service__comming {
+.service-comming {
   line-height: 26px;
   padding: 0;
   width: 62%;

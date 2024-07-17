@@ -1,34 +1,38 @@
+.intro .container {
+  max-width: 1300px;
+}
+
 .intro-wrapper {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Quicksand;
 }
 
-.intro__heading {
-  font-family: Quicksand;
+.intro-heading {
   font-weight: 700;
-  font-size: 50px;
+  font-size: var(--heading-font-size);
   line-height: 62px;
-  text-align: center; 
+  text-align: center;
   color: rgb(4, 106, 56);
 }
 
 .intro-content {
-  display: flex;
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 7%;
+  position: relative;
 }
 
 .intro-col {
-  min-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
+
 .intro-item {
   position: relative;
-  margin: 0px 67px;
   width: 129px;
   height: 129px;
   border-radius: 24px;
@@ -40,14 +44,13 @@
   margin-bottom: 40px;
 }
 
-.intro-col + .intro-col .intro-item::after {
+.intro-col + .intro-col::after {
   content: "";
   position: absolute;
-  width: calc(100% + 40px);
+  width: 35%;
   border-top: 2px dashed rgb(112, 112, 112);
-  top: 50%;
-  left: -180%;
-  transform: translateY(-50%);
+  height: 80px;
+  transform: translate(-150%, 84%);
 }
 
 .intro-col .intro-item.special {
@@ -72,18 +75,85 @@
 }
 
 .intro-title {
+  width: max-content;
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: var(--title-font-size);
   line-height: 25px;
   color: rgb(4, 106, 56);
   margin-bottom: 15px;
 }
 
 .intro-para {
-  max-width: 70%;
+  max-width: 72%;
   font-weight: 400;
-  font-size: 17px;
+  font-size: var(--text-font-size);
   color: rgb(0, 0, 0);
-  margin-bottom: 20px;
+  padding-left: 20px;
 }
+
+.intro-para li {
+  list-style-type: disc;
+}
+
+@media only screen and (max-width: 73em) {
+  .intro-content {
+    display: inline-block;
+  }
+
+  .intro-title {
+    margin: 0;
+  }
+  
+  .intro-col {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    place-items: center;
+    position: relative;
+    margin: 0 50px 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+
+  .intro-col::after {
+    display: none;
+  }
+
+  .intro-item {
+    margin-bottom: 0;
+  }
+
+  .intro-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+  }
+  .intro-para {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .intro-para {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .intro-col {
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0 0 80px;
+  }
+
+  .intro-heading {
+    margin-bottom: 40px;
+  }
+
+  .intro-title {
+    margin: 0;
+    transform: translate(-50%, -100%);
+  }
+
+}
+

@@ -3,7 +3,6 @@
 }
 
 .service-wrapper {
-  margin-top: 200px;
   max-width: 1200px;
   font-family: Quicksand;  
   flex-direction: column;
@@ -12,7 +11,7 @@
 
 .service-heading {
   font-weight: 700;
-  font-size: 50px;
+  font-size: var(--heading-font-size);
   line-height: 55px;
   text-align: center;
   color: rgb(4, 106, 56);
@@ -21,7 +20,9 @@
 .service-list {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-item__img,
@@ -53,7 +54,7 @@
 
 .service-item__title, .service-comming {
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--title-font-size);
   line-height: 24px;
   padding-top: 15px;
 }
@@ -62,4 +63,16 @@
   line-height: 26px;
   padding: 0;
   width: 62%;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .service-list {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .service-item {
+    margin-bottom: 40px;
+  }
 }

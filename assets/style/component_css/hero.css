@@ -1,6 +1,5 @@
 /* Intro CSS */
 .hero .container {
-  margin-top: 28px;
   height: 750px;
   max-width: 1300px;
 }
@@ -8,23 +7,33 @@
 .hero-wrapper {
   display: flex;
 }
-.hero-animation, .hero-info {
+
+.hero-info {
   width: 50%;
+  margin-left: 2%;
 }
 
-.hero-item {
+.hero-animation {
+  width: 50%;
+  margin-left: 5%;
   max-width: 100%;
+  height: auto;
   position: relative;
 }
 
-.ip14, .visa, .one_app, .sercure, .portal-1, .portal-2 {
-  position: absolute;    
-}
-.visa, .one_app, .sercure, .portal-1, .portal-2 {
+.ip14,
+.visa,
+.one_app,
+.sercure,
+.portal-1,
+.portal-2 {
+  position: absolute;
   transition: all 1.5s;
+
 }
+
 .ip14 {
-  max-width: 100%;
+  max-width: 95%;
   top: 0;
   left: -30%;
   pointer-events: none;
@@ -33,89 +42,77 @@
 .visa {
   max-width: 43%;
   z-index: 200;
-  top: 116px;
-  left: 313px;
+  transform: translate(105%, 25%);
 }
 .hero-animation:hover .visa {
-  transform: translate(38%, 0%) scale(0.8);
+  transform: translate(148%, 25%) scale(0.8);
 }
 .one_app {
-  max-width: 24%;
-  top: 177px;
-  left: 137px;
+  max-width: 23%;
   z-index: 200;
+  transform: translate(83%, 97%);
 }
 .hero-animation:hover .one_app {
-  transform: translate(-105%, 42%);
+  transform: translate(-40%, 140%);
 }
 .sercure {
-  max-width: 32%;
+  max-width: 30%;
   z-index: 50;
-  top: 334px;
-  left: 32px;
+  transform: translate(10%, 100%);
 }
 .hero-animation:hover .sercure {
-  transform: translate(-45%, 25%);
+  transform: translate(-40%, 125%);
 }
 .portal-1 {
   max-width: 7%;
-  top: 65px;
-  left: 460px;
-  transform: rotate(-30deg);    
+  transform: translate(950%, 120%) rotate(-30deg);
 }
 .hero-animation:hover .portal-1 {
-  transform: translate(30%, 5%) scale(1.4) rotate(0deg);
+  transform: translate(980%, 125%) scale(1.4) rotate(0deg);
 }
 .portal-2 {
   max-width: 10%;
-  top: 590px;
-  left: 469px;
-  transform: rotate(-45deg);
+  transform: translate(700%, 830%) rotate(-45deg);
 }
 .hero-animation:hover .portal-2 {
-  transform: translate(30%, 20%) scale(1.4) rotate(-80deg);
+  transform: translate(730%, 860%) scale(1.4) rotate(-80deg);
 }
 .hero-info {
   font-family: Quicksand;
   color: rgb(19, 21, 23);
-  padding-left: 20px;
   position: relative;
 }
 
 .hero-heading {
-  font-size: 48px;
+  font-size: calc(var(--heading-font-size) - 2px);
   font-weight: 700;
   line-height: 70px;
   margin-top: 60px;
   margin-bottom: 45px;
 }
+
+.hero-info__component {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-title {
-  font-size: 24px;
   line-height: 20px;
+  font-size: calc(var(--title-font-size) + 4px);
   font-weight: 400;
   margin-bottom: 20px;
   color: rgb(36, 39, 45);
 }
 .hero-title span {
   font-weight: 700;
-  color: rgba(255, 0 , 0, 1);
+  color: rgb(255, 0, 0);
 }
 
 .hero-title .special {
   color: rgb(4, 106, 56);
 }
 
-.hero-download {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 30px;
-  color: rgb(36, 39, 45);
-  margin-top: 118px;
-  margin-bottom: 20px;
-}
-.hero-download-link + .hero-download-link {
-  margin-left: 10px;
-}
+
 .hero-ellipse {
   position: absolute;
   width: 70px;
@@ -127,4 +124,129 @@
   z-index: 200;
   top: 400px;
   left: 600px;
+}
+
+.hero-download__component {
+  display: flex;
+  flex-direction: column;
+  margin-top: 118px;
+}
+
+.hero-download__links {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .hero .container {
+    height: auto;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-animation {
+    pointer-events: none;
+    width: 300px;
+    height: 320px;
+    margin: 0;
+  }
+
+  .hero-info {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-heading {
+    margin-bottom: 10px;
+  }
+
+  .hero-info__component {
+    flex-direction: row;
+  }
+
+  .hero-ellipse {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  .hero-info__component {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .hero-download__component {
+    margin: 0;
+  }
+
+  .hero-download__links {
+    gap: 10px
+  }
+
+  .hero-download__links a img {
+    width: 80%;
+  }
+
+
+  .visa {
+    transform: translate(148%, 25%) scale(0.8);
+  }
+  .one_app {
+    transform: translate(-40%, 140%);
+  }
+  .sercure {
+    transform: translate(-40%, 125%);
+  }
+  .portal-1 {
+    transform: translate(980%, 125%) scale(1.4) rotate(0deg);
+  }
+  .portal-2 {
+    transform: translate(730%, 860%) scale(1.4) rotate(-80deg);
+  }
+
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .hero-animation {
+    width: 200px;
+    height: 230px;
+  }
+
+  .hero-heading,
+  .hero-title{
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .hero-info__component {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .hero-download__links a {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .visa {
+    transform: translate(105%, 25%);
+  }
+  .one_app {
+    transform: translate(83%, 97%);
+  }
+  .sercure {
+    transform: translate(10%, 100%);
+  }
+  .portal-1 {
+    transform: translate(950%, 120%) rotate(-30deg);
+  }
+  .portal-2 {
+    transform: translate(700%, 830%) rotate(-45deg);
+  }
 }

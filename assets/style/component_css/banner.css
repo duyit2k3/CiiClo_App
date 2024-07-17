@@ -1,37 +1,37 @@
 .banner .container {
   display: flex;
   align-items: center;
+  max-width: 1200px;
 }
 
 .banner-wrapper {
-  margin-top: 200px;
   font-family: Quicksand;
   color: rgb(255, 255, 255);
-  width: 1200px;
   border-radius: 20px;
-  background-color: green;
   background: linear-gradient(10deg, rgb(22, 152, 88), rgb(4, 106, 56));
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 80px;
+  /* column-gap: 40px; */
 }
 
 .banner-infor {
-  padding-top: 80px;
+  width: 60%;
 }
 
 .banner-heading {
+  width: 410px;
   font-weight: 500;
-  font-size: 64px;
+  font-size: calc(var(--heading-font-size) + 14px);
   padding-bottom: 20px;
   line-height: 70px;
-  padding-right: 29%;
 }
 
 
-.banner-title {
+.banner-para {
   font-weight: 500;
-  font-size: 17px;
+  font-size: var(--text-font-size);
   line-height: 30px;
   padding-bottom: 35px;
   padding-right: 12%;
@@ -41,6 +41,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 30px;
+  row-gap: 16px;
 }
 
 .banner-grid__item {
@@ -48,10 +49,7 @@
   font-size: 17px;
   line-height: 27px;
   position: relative;
-  display: flex;
-  align-items: center;
   padding-left: 40px;
-  padding-bottom: 16px;
 }
 
 .banner-grid__checkmark {
@@ -76,8 +74,9 @@
   top: 6px;
 }
 
-.banner-link + .banner-link {
-  margin-left: 12px;
+.banner-links {
+  display: flex;
+  column-gap: 20px;
 }
 
 .banner-img {
@@ -87,5 +86,50 @@
 }
 
 .banner-img img {
-  border-radius: 51px 51px 0 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .banner-wrapper {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  .banner-infor {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .banner-heading {
+    width: 600px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .banner-wrapper {
+    padding: 0 20px;
+  }
+  
+  .banner-infor {
+    width: 100%;
+
+  }
+  .banner-heading {
+    width: 295px;
+  }
+  .banner-grid {
+    grid-template-columns: 1fr;
+  }
+  .banner-links {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+
+  .banner-img {
+    padding-top: 40px;
+  }
+
+  .banner-img img {
+    width: 60%;
+  }
 }

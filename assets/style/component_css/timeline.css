@@ -1,3 +1,8 @@
+.timeline {
+  margin-bottom: 10em;
+  height: max-content;
+}
+
 .timeline .container-xl {
   max-width: 1300px;
 }
@@ -16,7 +21,7 @@
   line-height: 55px;
   text-align: center;
   color: rgb(4, 106, 56);
-  margin-bottom: 40px;
+  margin-bottom: 2.2em;
 }
 
 .timeline__content {
@@ -37,7 +42,7 @@
   );  
   position: absolute;
   left: 0;
-  top: 5.9em;
+  top: 7.3em;
 }
 
 .timeline__bottom,
@@ -174,8 +179,26 @@
   }
 }
 
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+@media only screen and (max-width: 63.9375em) {
   .timeline__middle {
-    top: 7.7em;
+    top: 8.8em;
+  }
+}
+
+@media only screen and (min-width: 90em) and (max-width: 120.625em) {
+  .timeline__middle {
+    top: 8em;
+  }
+}
+
+@media only screen and (min-width: 80em) and (max-width: 89.9375em) {
+  .timeline__middle {
+    top: 8.5em;
+  }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+  .timeline__middle {
+    top: 8.8em;
   }
 }

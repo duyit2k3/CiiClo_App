@@ -15,7 +15,9 @@ body {
 }
 
 section {
-  padding-top: 70px;
+  height: 100vh;
+  min-height: max-content;
+  margin-bottom: 10em;
 }
 
 a,
@@ -38,20 +40,50 @@ ul {
   overflow: hidden;
 }
 
-/* Mobie */
+
 @media only screen and (max-width: 46.1875em) {
   :root {
-    --heading-font-size: 32px;
-    --title-font-size: 15px;
-    --text-font-size: 13px;
+    --heading-font-size: 28px;
+    --title-font-size: 11px;
+    --text-font-size: 8px;
   }
 }
 
-/* Tablet */
+
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
   :root {
-    --heading-font-size: 37px;
+    --heading-font-size: 30px;
+    --title-font-size: 13px;
+    --text-font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 64em) and (max-width: 79.9375em) {
+  :root {
+    --heading-font-size: 30px;
+    --title-font-size: 13px;
+    --text-font-size: 11px;
+  }
+}
+
+
+@media only screen and (((min-width: 80em) and (max-width: 89.9375em)) or ((min-height: 63.9375em) and (max-width: 89.9375em))) {
+  :root {
+    --heading-font-size: 38px;
+    --title-font-size: 16px;
+    --text-font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-width: 90em) and (max-width: 120.625em) {
+  :root {
+    --heading-font-size: 42px;
     --title-font-size: 17px;
     --text-font-size: 15px;
   }
 }
+
+
+
+

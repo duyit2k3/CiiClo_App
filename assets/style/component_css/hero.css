@@ -1,56 +1,58 @@
 /* Intro CSS */
-.hero .container {
-  height: 750px;
-  max-width: 1300px;
+.hero {
+  padding-top: 20vh;
 }
 
-.hero-wrapper {
-  display: flex;
-}
-
-.hero-info {
-  width: 50%;
-  margin-left: 2%;
+.hero .container-xl {
+  padding: 0;
+  max-width: 1357px;
 }
 
 .hero-animation {
-  width: 50%;
-  margin-left: 5%;
-  max-width: 100%;
-  height: auto;
+  max-width: 570px;
+  width: 100%;
+  height: max-content;
   position: relative;
 }
 
-.ip14,
+.hero-info {
+  width: 100%;
+  font-family: Quicksand;
+  color: rgb(19, 21, 23);
+  position: relative;
+  padding-left: 4%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
 .visa,
 .one_app,
 .sercure,
 .portal-1,
 .portal-2 {
   position: absolute;
+  top: 0;
+  left: 0;
   transition: all 1.5s;
-
 }
 
 .ip14 {
-  max-width: 95%;
-  top: 0;
-  left: -30%;
   pointer-events: none;
   z-index: 100;
+  transform: translate(-35%, 3%);
 }
+
 .visa {
-  max-width: 43%;
+  max-width: 45%;
   z-index: 200;
-  transform: translate(105%, 25%);
+  transform: translate(99%, 30%);
 }
 .hero-animation:hover .visa {
-  transform: translate(148%, 25%) scale(0.8);
+  transform: translate(138%, 30%) scale(0.8);
 }
 .one_app {
-  max-width: 23%;
+  max-width: 24%;
   z-index: 200;
-  transform: translate(83%, 97%);
+  transform: translate(70%, 110%);
 }
 .hero-animation:hover .one_app {
   transform: translate(-40%, 140%);
@@ -58,49 +60,36 @@
 .sercure {
   max-width: 30%;
   z-index: 50;
-  transform: translate(10%, 100%);
+  transform: translate(10%, 108%);
+  z-index: -1;
 }
 .hero-animation:hover .sercure {
-  transform: translate(-40%, 125%);
+  transform: translate(-45%, 125%);
 }
 .portal-1 {
   max-width: 7%;
-  transform: translate(950%, 120%) rotate(-30deg);
+  transform: translate(950%, 180%) rotate(-30deg);
 }
 .hero-animation:hover .portal-1 {
-  transform: translate(980%, 125%) scale(1.4) rotate(0deg);
+  transform: translate(980%, 180%) scale(1.4) rotate(0deg);
 }
 .portal-2 {
   max-width: 10%;
-  transform: translate(700%, 830%) rotate(-45deg);
+  transform: translate(700%, 900%) rotate(-45deg);
 }
 .hero-animation:hover .portal-2 {
-  transform: translate(730%, 860%) scale(1.4) rotate(-80deg);
-}
-.hero-info {
-  font-family: Quicksand;
-  color: rgb(19, 21, 23);
-  position: relative;
+  transform: translate(730%, 900%) scale(1.5) rotate(-80deg);
 }
 
 .hero-heading {
+  margin: 1em 0;
   font-size: calc(var(--heading-font-size) - 2px);
   font-weight: 700;
-  line-height: 70px;
-  margin-top: 60px;
-  margin-bottom: 45px;
-}
-
-.hero-info__component {
-  display: flex;
-  flex-direction: column;
 }
 
 .hero-title {
-  line-height: 20px;
   font-size: calc(var(--title-font-size) + 4px);
   font-weight: 400;
-  margin-bottom: 20px;
   color: rgb(36, 39, 45);
 }
 .hero-title span {
@@ -111,7 +100,6 @@
 .hero-title .special {
   color: rgb(4, 106, 56);
 }
-
 
 .hero-ellipse {
   position: absolute;
@@ -124,12 +112,13 @@
   z-index: 200;
   top: 400px;
   left: 600px;
+  z-index: 1000;
 }
 
 .hero-download__component {
   display: flex;
   flex-direction: column;
-  margin-top: 118px;
+  row-gap: 10px;
 }
 
 .hero-download__links {
@@ -137,61 +126,89 @@
   gap: 20px;
 }
 
-@media only screen and (max-width: 63.9375em) {
-  .hero .container {
-    height: auto;
+@media only screen and (max-width: 120.625em) {
+  .hero-animation {
+    width: 67%;
   }
 
-  .hero-wrapper {
-    flex-direction: column;
-    align-items: center;
+  .hero-info {
+    width: 85%;
   }
+
+  .hero-download__links {
+    gap: 0;
+  }
+
+  .hero-download__links a img {
+    width: 90%;
+  }
+
+  .hero-info {
+    grid-template-rows: 1fr 0.8fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 90em) {
+  .hero {
+    padding-top: 23vh;
+  }
+
   .hero-animation {
-    pointer-events: none;
-    width: 300px;
-    height: 320px;
-    margin: 0;
+    width: 60%;
+  }
+
+  .hero-download__links a img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .hero {
+    padding-top: 10vh;
+  }
+
+  .hero .row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .custom-col {
+    width: 100%;
+  }
+
+  .custom-col:nth-child(1) {
+    justify-content: center !important;
   }
 
   .hero-info {
     width: 100%;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .hero-animation {
+    pointer-events: none;
+    width: 35%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .hero-heading {
-    margin-bottom: 10px;
+    grid-column: 1 / -1;
   }
 
-  .hero-info__component {
-    flex-direction: row;
+  .hero-title__component {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 
   .hero-ellipse {
     display: none;
     visibility: hidden;
   }
-
-
-  .hero-info__component {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .hero-download__component {
-    margin: 0;
-  }
-
-  .hero-download__links {
-    gap: 10px
-  }
-
-  .hero-download__links a img {
-    width: 80%;
-  }
-
 
   .visa {
     transform: translate(148%, 25%) scale(0.8);
@@ -208,31 +225,21 @@
   .portal-2 {
     transform: translate(730%, 860%) scale(1.4) rotate(-80deg);
   }
-
 }
 
 @media only screen and (max-width: 46.1875em) {
   .hero-animation {
-    width: 200px;
-    height: 230px;
+    width: 30%;
   }
 
-  .hero-heading,
-  .hero-title{
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .hero-info__component {
-    display: grid;
+  .hero-info {
     grid-template-columns: 1fr;
-    place-items: center;
-  }
-  .hero-download__links a {
-    display: flex;
-    justify-content: center;
+    grid-template-rows: 1fr 0.8fr 1fr;
   }
 
+  .hero-title__component {
+    row-gap: 10px;
+  }
 
   .visa {
     transform: translate(105%, 25%);
@@ -249,4 +256,14 @@
   .portal-2 {
     transform: translate(700%, 830%) rotate(-45deg);
   }
+}
+
+@media only screen and (max-height: 41.25em) {
+  .hero-animation {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-height: 41.25em) {
+
 }

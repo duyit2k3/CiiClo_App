@@ -1,3 +1,7 @@
+.contact {
+  height: max-content;
+}
+
 .contact .container {
   display: flex;
   justify-content: center;
@@ -21,7 +25,6 @@
 .contact-heading {
   font-weight: 700;
   font-size: calc(var(--heading-font-size) - 14px);
-  line-height: 45px;
   color: rgb(4, 106, 56);
   padding-bottom: 9px;
 }
@@ -41,7 +44,6 @@
 .contact-details__text {
   font-weight: 400;
   font-size: calc(var(--text-font-size) + 3px);
-  line-height: 25px;
   margin-left: 24px;
 }
 
@@ -79,6 +81,7 @@
 .contact-form__group2 {
   display: flex;
   margin-top: 35px;
+  font-size: var(--text-font-size);
 }
 
 .contact-form__option {
@@ -129,7 +132,9 @@
 
 .btnSend {
   float: right;
-  padding: 15px 48px;
+  max-width: 208px;
+  max-height: 55px;
+  padding: 15px 48.35px;
   font-weight: 500;
   font-size: var(--title-font-size);
   color: rgb(255, 256, 255);
@@ -201,3 +206,4 @@
     translate: -50% 35%;
   }
 }
+
